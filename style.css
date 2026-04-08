@@ -1,0 +1,123 @@
+@font-face {
+    font-family: pop;
+    src: url(https://sundown-ivory.vercel.app/NeueHaasDisplay-Roman.ttf);
+}
+*{
+    background-color: antiquewhite;
+    color: black;
+    font-family: pop;
+}
+
+#page1{
+    min-height:100vh;       /*view port height*/
+    width:100%;
+    background-color: #EFEAE3;
+    position: relative;            /*parent div ko position relative dedo   */
+    padding: 0 2vw;
+}
+
+nav{
+    /* height: 100px; */
+    padding: 2vw 1vw;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 0.4vw;
+}
+
+.nav-part2 h4{
+    padding: 10px 20px;
+    border: 1px solid rgba(136, 134, 134, 0.527);
+    border-radius: 50px;
+    color: rgba(0, 0, 0, 0.856);
+    font-weight: 500;
+    background-color: inherit;
+    font-size: 18px;
+    position: relative;
+    transition: all ease 0.3s;
+    overflow: hidden;
+}
+
+.nav-part2 h4::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0); /* Black ke jagah halka transparent color */
+    left: 0;
+    bottom: -100%;
+    border-radius: 50%;
+    transition: all ease 0.4s;
+}
+
+
+.nav-part2 h4:hover::after{
+    bottom: 0;
+    border-radius: 0;
+    border: normal;
+    transition: all ease 0.3s;
+}
+.nav-part2 h4 a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.809);
+    /* background-color: rgb(255, 255, 255); */
+    position: relative;
+    z-index: 9;
+}
+
+.nav-part2 h4:hover  a{
+    color: #fff;
+    background-color: black;
+}
+
+#center{
+    height: 70vh;
+    width: 100vw;
+    /* background-color: rgb(255, 106, 0); */
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.421);
+    padding-bottom: 2.5vw;
+}
+
+
+#center h3{
+    background-color: inherit;
+    width: 20vw;
+    padding-left: 21px ;
+    position: absolute;
+    font-size: 30px;
+    top: 61%;
+    align-items: center;
+    justify-content: space-evenly;
+    /* transform: translate(-50%,); */
+}
+
+#center h1{
+    /* background-color: aquamarine; */
+    font-size: 8vw;
+    text-align: right;
+    font-weight: 900;
+    margin: 0.1%;
+    position: absolute;
+    top: 28%;
+    left:67%;
+}
+
+video{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 1%;
+    border-radius: 14%;
+}
