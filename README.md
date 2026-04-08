@@ -27,7 +27,7 @@ Sundown-Clone/
 └── README.md       # Documentation
 Installation and Setup
 1. Clone the Repository
-git clone https://github.com/your-AmanBhushanOfficial/sundown-clone.git
+git clone https://github.com/your-username/sundown-clone.git
 cd sundown-clone
 2. Open the Project
 
